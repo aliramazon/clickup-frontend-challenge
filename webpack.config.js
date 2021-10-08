@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 
 module.exports = function (env, argv) {
+    const isProd = argv.mode === "production";
     return {
         mode: argv.mode,
         entry: "./src/index.js",
@@ -34,9 +35,14 @@ module.exports = function (env, argv) {
             ]
         },
         plugins: [
-            new MiniCssExtractPlugin({ filename: "styles.[contenthash].css" }),
+            new MiniCssExtractPlugin({
+                filename: `${
+                    isProd ? "styles.[contenthash].css" : "styles.css"
+                }`
+            }),
             new HtmlWebpackPlugin({
-                template: path.resolve(__dirname, "src", "index.html")
+                template: path.resolve(__dirname, "src", "index.html"),
+                inject: "body"
             }),
             new CleanWebpackPlugin(),
             new webpack.HotModuleReplacementPlugin()

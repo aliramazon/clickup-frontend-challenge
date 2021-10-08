@@ -5,10 +5,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 
 module.exports = function (env, argv) {
-    console.log(__dirname, "====dirname=====");
     return {
-        mode: "development",
-        output: env,
+        mode: argv.mode,
         entry: "./src/index.js",
         output: {
             path: path.resolve(__dirname, "dist"),

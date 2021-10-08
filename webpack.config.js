@@ -12,7 +12,8 @@ module.exports = function (env, argv) {
         entry: "./src/index.js",
         output: {
             path: path.resolve(__dirname, "dist"),
-            filename: "build.[contentHash].js"
+            filename: "build.[contenthash].js",
+            assetModuleFilename: "images/[contenthash].[ext]"
         },
         module: {
             rules: [
@@ -27,11 +28,15 @@ module.exports = function (env, argv) {
                         },
                         { loader: "sass-loader", options: { sourceMap: true } }
                     ]
+                },
+                {
+                    test: /\.html$/i,
+                    loader: "html-loader"
                 }
             ]
         },
         plugins: [
-            new MiniCssExtractPlugin({ filename: "styles.[contentHash].css" }),
+            new MiniCssExtractPlugin({ filename: "styles.[contenthash].css" }),
             new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, "src", "index.html")
             }),
@@ -44,10 +49,6 @@ module.exports = function (env, argv) {
             compress: true,
             port: 8000,
             watchFiles: ["src/*.html"]
-
-            // devMiddleware: {
-            //     writeToDisk: true
-            // }
         }
     };
 };

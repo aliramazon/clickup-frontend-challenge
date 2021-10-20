@@ -1,0 +1,31 @@
+@media (max-width: 1120px) {
+    .header__image__container {
+        width: -webkit-fill-available;
+    }
+
+    .testimonials__shadow {
+        width: 20rem;
+
+        &_left {
+            left: -12rem;
+        }
+    }
+
+    .footer {
+        &__buttons {
+            grid-template-columns: initial;
+            grid-template-rows: max-content;
+            grid-row-gap: 2rem;
+        }
+
+        &__main {
+            grid-template-columns: 1fr repeat(2, max-content);
+            grid-template-rows: repeat(2, max-content);
+            grid-row-gap: 4rem;
+            grid-column-gap: 8rem;
+
+            margin-top: 6rem;
+            padding: 0;
+        }
+    }
+}

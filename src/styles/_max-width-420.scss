@@ -1,0 +1,49 @@
+@media (max-width: 420px) {
+    .wrapper {
+        padding: 0 2rem;
+    }
+
+    .outer-wrapper {
+        width: 100%;
+        padding: 2rem;
+
+        border-radius: 0;
+    }
+
+    .header {
+        &__image__container {
+            grid-row: 2;
+
+            position: initial;
+            transform: initial;
+            width: 100%;
+            height: initial;
+            padding: initial;
+        }
+
+        &__image {
+            position: initial;
+            width: 100%;
+            height: initial;
+        }
+    }
+
+    .storage {
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0;
+        margin-top: 5rem;
+    }
+
+    .feature {
+        padding: 0;
+
+        &__boxes {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .footer {
+        padding-top: 2rem;
+    }
+}

@@ -1,0 +1,14 @@
+@media (max-width: 1000px) {
+    body {
+        padding-top: 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobile_nav,
+    .mobile_nav_popup {
+        display: grid;
+    }
+}

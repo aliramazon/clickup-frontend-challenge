@@ -1,0 +1,28 @@
+@media (max-width: 600px) {
+    .footer {
+        &__buttons {
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(2, max-content);
+
+            width: 100%;
+        }
+
+        &__main {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, max-content);
+        }
+
+        &__info {
+            grid-column: 1 / 3;
+            grid-row-gap: 2rem;
+        }
+
+        &__column:nth-child(3) {
+            grid-area: initial;
+        }
+
+        &__column:nth-child(4) {
+            grid-column: 1 / 3;
+        }
+    }
+}

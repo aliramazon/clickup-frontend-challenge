@@ -5,9 +5,282 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Documents</title>
+        <title>Clickup Mini Project</title>
     </head>
     <body>
-        <h1>I am gonna be beatuful</h1>
+        <nav class="nav wrapper">
+            <img class="logo" src="./images/Logo.svg" alt="logo" />
+            <div class="nav__links">
+                <a class="link link__active" href="#">About</a>
+                <a class="link" href="#">Help</a>
+                <a class="link" href="#">Features</a>
+                <a class="link" href="#">Signup</a>
+            </div>
+            <button class="btn btn_white icon-arrow">Request Demo</button>
+        </nav>
+        <input id="mobile_nav_popup" type="checkbox" />
+        <nav class="mobile_nav">
+            <img class="logo" src="./images/Logo.svg" alt="logo" />
+            <label class="hamburger" for="mobile_nav_popup"></label>
+        </nav>
+        <div class="mobile_nav_popup">
+            <div class="mobile_nav_popup__header">
+                <img class="logo" src="./images/Logo.svg" alt="logo" />
+                <label class="close" for="mobile_nav_popup"></label>
+            </div>
+            <div class="mobile_nav_popup__links">
+                <a class="link link__active" href="#">About</a>
+                <a class="link" href="#">Help</a>
+                <a class="link" href="#">Features</a>
+                <a class="link" href="#">Signup</a>
+                <label class="btn btn_purple" for="mobile_nav_popup">
+                    Request Demo
+                </label>
+            </div>
+        </div>
+        <header class="header wrapper">
+            <h1>Save your data <br />storage here.</h1>
+            <h5>
+                Data Warehouse is a data storage area that <br />
+                has been tested for security, so you can store <br />
+                your data here safely but not be afraid of <br />
+                being stolen by others.
+            </h5>
+            <button class="btn btn_purple">Learn more</button>
+            <div class="header__image__container">
+                <img
+                    class="header__image"
+                    src="./images/HeaderImage.png"
+                    alt="header image"
+                />
+            </div>
+        </header>
+        <section class="storage wrapper">
+            <img
+                class="storage__image"
+                src="./images/StorageImage.png"
+                alt="storage image"
+            />
+            <h2 class="storage__text">We are a high-level data storage bank</h2>
+            <h5 class="storage__text">
+                The place to store various data that you can access at any time
+                through the internet and where you can carry it. This very
+                flexible storage area has a high level of security. To enter
+                into your own data you must enter the password that you created
+                when you registered in this Data Warehouse.
+            </h5>
+        </section>
+        <section class="feature wrapper">
+            <h2 class="feature__title">Features</h2>
+            <h5 class="feature__subtitle">
+                Some of the features and advantages that we provide for those of
+                you <br />who store data in this Data Warehouse.
+            </h5>
+            <div class="feature__boxes">
+                <div class="feature__boxes__search">
+                    <img src="./images/FeatureSearchImage.png" />
+                    <h3>Search Data</h3>
+                    <h6>
+                        Don’t worry if your data is very large, the Data
+                        Warehoue provides a search engine, which is useful for
+                        making it easier to find data effectively saving time.
+                    </h6>
+                    <a class="link icon-arrow" href="#">Learn more</a>
+                </div>
+                <div class="feature__boxes__access">
+                    <img src="./images/FeatureAccessImage.png" />
+                    <h3>24 Hours Access</h3>
+                    <h6>
+                        Access is given 24 hours a full morning to night and
+                        meet again in the morning, giving you comfort when you
+                        need data when urgent.
+                    </h6>
+                    <a class="link icon-arrow" href="#">Learn more</a>
+                </div>
+                <div class="feature__boxes__print">
+                    <img src="./images/FeaturePrintImage.png" />
+                    <h3>Print Out</h3>
+                    <h6>
+                        Print out service gives you convenience if someday you
+                        need print data, just edit it all and just print it.
+                    </h6>
+                    <a class="link icon-arrow" href="#">Learn more</a>
+                </div>
+                <div class="feature__boxes__security">
+                    <img src="./images/FeatureSecurityImage.png" />
+                    <h3>Security Code</h3>
+                    <h6>
+                        Data Security is one of our best facilities. Allows for
+                        your files to be safer. The file can be secured with a
+                        code or password that you created, so only you can open
+                        the file.
+                    </h6>
+                    <a class="link icon-arrow" href="#">Learn more</a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials outer-wrapper">
+            <input id="card-1" name="card" type="radio" checked />
+            <input id="card-2" name="card" type="radio" />
+            <input id="card-3" name="card" type="radio" />
+            <input id="card-4" name="card" type="radio" />
+            <span class="testimonials__shadow testimonials__shadow_left"></span>
+            <span
+                class="testimonials__shadow testimonials__shadow_right"
+            ></span>
+            <h2 class="testimonials__title">Testimonials</h2>
+            <div class="testimonials__cards">
+                <div class="testimonials__card c1">
+                    <img
+                        class="testimonials__card__user_image"
+                        src="./images/John.png"
+                        alt="user"
+                    />
+                    <h5 class="testimonials__card__user_name">John Fang</h5>
+                    <h7 class="testimonials__card__user_organization">
+                        wordfaang.com
+                    </h7>
+                    <h5 class="testimonials__card__user_info">
+                        Suspendisse ultrices at diam lectus nullam. Nisl,
+                        sagittis viverra enim erat tortor ultricies massa
+                        turpis. Arcu pulvinar aenean nam laoreet nulla.
+                    </h5>
+                </div>
+                <div class="testimonials__card c2">
+                    <img
+                        class="testimonials__card__user_image"
+                        src="./images/Jeny.png"
+                        alt="user"
+                    />
+                    <h5 class="testimonials__card__user_name">Jeny Doe</h5>
+                    <h7 class="testimonials__card__user_organization">
+                        UX Engineer
+                    </h7>
+                    <h5 class="testimonials__card__user_info">
+                        Suspendisse ultrices at diam lectus nullam. Nisl,
+                        sagittis viverra enim erat tortor ultricies massa
+                        turpis. Arcu pulvinar aenean nam laoreet nulla.
+                    </h5>
+                </div>
+                <div class="testimonials__card c3">
+                    <img
+                        class="testimonials__card__user_image"
+                        src="./images/John.png"
+                        alt="user"
+                    />
+                    <h5 class="testimonials__card__user_name">John Fang</h5>
+                    <h7 class="testimonials__card__user_organization">
+                        wordfaang.com
+                    </h7>
+                    <h5 class="testimonials__card__user_info">
+                        Suspendisse ultrices at diam lectus nullam. Nisl,
+                        sagittis viverra enim erat tortor ultricies massa
+                        turpis. Arcu pulvinar aenean nam laoreet nulla.
+                    </h5>
+                </div>
+                <div class="testimonials__card c4">
+                    <img
+                        class="testimonials__card__user_image"
+                        src="./images/Jeny.png"
+                        alt="user"
+                    />
+                    <h5 class="testimonials__card__user_name">Jeny Doe</h5>
+                    <h7 class="testimonials__card__user_organization">
+                        UX Engineer
+                    </h7>
+                    <h5 class="testimonials__card__user_info">
+                        Suspendisse ultrices at diam lectus nullam. Nisl,
+                        sagittis viverra enim erat tortor ultricies massa
+                        turpis. Arcu pulvinar aenean nam laoreet nulla.
+                    </h5>
+                </div>
+            </div>
+            <div class="testimonials__dots">
+                <label class="testimonials__dot d1" for="card-1"></label>
+                <label class="testimonials__dot d2" for="card-2"></label>
+                <label class="testimonials__dot d3" for="card-3"></label>
+                <label class="testimonials__dot d4" for="card-4"></label>
+            </div>
+            <div class="testimonials__arrows">
+                <label
+                    class="testimonials__arrow left long a1"
+                    for="card-2"
+                ></label>
+                <label class="testimonials__arrow right opacity a1"></label>
+                <label
+                    class="testimonials__arrow left long a2"
+                    for="card-3"
+                ></label>
+                <label
+                    class="testimonials__arrow right long a2"
+                    for="card-1"
+                ></label>
+                <label
+                    class="testimonials__arrow left long a3"
+                    for="card-4"
+                ></label>
+                <label
+                    class="testimonials__arrow right long a3"
+                    for="card-2"
+                ></label>
+                <label class="testimonials__arrow left opacity a4"></label>
+                <label
+                    class="testimonials__arrow right long a4"
+                    for="card-3"
+                ></label>
+            </div>
+        </section>
+        <span class="full_width_line"></span>
+        <footer class="footer wrapper">
+            <div class="footer__titles">
+                <h2>Try for free</h2>
+                <h5>Get limited 1 week free try our features!</h5>
+            </div>
+            <div class="footer__buttons">
+                <button class="btn btn_rose">Learn more</button>
+                <button class="btn btn_white icon-arrow">Request Demo</button>
+            </div>
+            <div class="footer__main">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <img class="logo" src="./images/Logo.svg" alt="logo" />
+                        <h4>DataWarehouse</h4>
+                    </div>
+                    <div class="footer__contact">
+                        <h6>
+                            Warehouse Society, 234 <br />
+                            Bahagia Ave Street PRBW 29281
+                        </h6>
+                        <h6>
+                            info@warehouse.project <br />
+                            1-232-3434 (Main)
+                        </h6>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <h6 class="footer__column__title">About</h6>
+                    <a class="link" href="#">Profile</a>
+                    <a class="link" href="#">Features</a>
+                    <a class="link" href="#">Careers</a>
+                    <a class="link" href="#">DW News</a>
+                </div>
+                <div class="footer__column">
+                    <h6 class="footer__column__title">Help</h6>
+                    <a class="link" href="#">Support</a>
+                    <a class="link" href="#">Sign up</a>
+                    <a class="link" href="#">Guide</a>
+                    <a class="link" href="#">Reports</a>
+                    <a class="link" href="#">Q&A</a>
+                </div>
+                <div class="footer__column">
+                    <h6 class="footer__column__title">Social Media</h6>
+                    <div class="footer__social">
+                        <a class="footer__social__link facebook" href="#"></a>
+                        <a class="footer__social__link twitter" href="#"></a>
+                        <a class="footer__social__link instagram" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

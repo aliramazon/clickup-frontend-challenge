@@ -1,0 +1,27 @@
+.storage {
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-row-gap: 4rem;
+    align-content: center;
+    justify-content: right;
+
+    height: 56rem;
+    margin-top: 20.218rem;
+    padding-right: 9.2rem;
+    position: relative;
+    background-color: $rose-100-color;
+    border-radius: $big-radius;
+
+    &__image {
+        width: 47.7rem;
+        height: 50.4rem;
+
+        position: absolute;
+        top: 3.182rem;
+        left: 1.1rem;
+    }
+
+    &__text {
+        width: 47.5rem;
+    }
+}
